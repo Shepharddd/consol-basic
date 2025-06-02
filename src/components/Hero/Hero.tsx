@@ -7,38 +7,36 @@ export function Hero() {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title} style={{ width: "75%", color: '#fff' }}>
+            <Title className={classes.title} style={{ color: '#fff' }}>
              We make dreams come true, one build at a time.
             </Title>
 
-            <Text className={classes.description} style={{ width: "75%", color: '#fff' }} mt={30}>
+            <Text className={classes.description} style={{ color: '#fff' }} mt={30}>
               Rosmon Projects a Sydney-Based building company that has contributed to the construction of many significant landmarks in the heart of Sydney and greater region. We pride ourselves in the quality of our work and delivering exceptional project outcomes for our clients. Our end-to-end construction services comply and exceed all Australian Standards and Work Health &amp; Safety (WHS) Regulations.
             </Text>
-
-            <Flex 
+            <Flex
+            pt={50}
               direction="row"
-              gap="md"
-              wrap="wrap"
-              mt={40}
+              gap={{ base: 'sm', sm: 'lg' }}
             >
-
               <Button
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
-                size="xl"
-                className={classes.control}
-              >
-                Contact Us
-              </Button>
+                  variant="gradient"
+                  gradient={{ from: 'pink', to: 'yellow' }}
+                  size="md"
+                  className={classes.control}
+                >
+                  Contact Us
+                </Button>
 
-              <Button
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
-                size="xl"
-                className={classes.control}
-              >
-                Book a Consult
-              </Button>
+                <Button
+                  variant="gradient"
+                  gradient={{ from: 'pink', to: 'yellow' }}
+                  size="md"
+                  className={classes.control}
+                >
+                  Bookings
+                </Button>
+
             </Flex>
           </div>
         </div>
