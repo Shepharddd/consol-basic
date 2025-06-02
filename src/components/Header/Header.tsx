@@ -104,8 +104,8 @@ export function Header() {
         >
           <Divider />
           <Box>PO Box: 142, Bondi NSW 2026</Box>
-          <Box>Email: <a href='mailto:micheal@rosmon.com'> micheal@rosmon.com</a></Box>
-          <Box>Phone: <a href='mailto:micheal@rosmon.com'> 041 726 581</a></Box>
+          <a href='mailto:micheal@rosmon.com'> micheal@rosmon.com</a>
+          <a href='mailto:micheal@rosmon.com'> 041 726 581</a>
         </Flex>
       </Drawer>
     </header>

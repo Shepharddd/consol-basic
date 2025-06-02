@@ -18,6 +18,8 @@ export function Hero() {
             <Flex 
               direction="row"
               gap="md"
+              wrap="wrap"
+              mt={40}
             >
 
               <Button
@@ -25,7 +27,6 @@ export function Hero() {
                 gradient={{ from: 'pink', to: 'yellow' }}
                 size="xl"
                 className={classes.control}
-                mt={40}
               >
                 Contact Us
               </Button>
@@ -35,7 +36,6 @@ export function Hero() {
                 gradient={{ from: 'pink', to: 'yellow' }}
                 size="xl"
                 className={classes.control}
-                mt={40}
               >
                 Book a Consult
               </Button>
