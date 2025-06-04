@@ -30,7 +30,7 @@ export function Feature() {
   const features = mockdata.map((feature) => (
     <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
       <Card.Section>
-          <Image src={feature.img} height={180} />
+          <Image src={feature.img} alt={feature.title} height={180} />
       </Card.Section>
       <Text fz="lg" mb="md" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
@@ -48,7 +48,7 @@ export function Feature() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" pb="xl">
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
         Our Services

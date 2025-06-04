@@ -55,12 +55,12 @@
 }
 
 .control {
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px */
+  /* padding-right: 50px; */
   font-family: Outfit, var(--mantine-font-family);
   font-size: 22px;
 
-  @media (max-width: $mantine-breakpoint-md) {
+  /* @media (max-width: $mantine-breakpoint-md) {
     width: 100%;
-  }
+  } */
 }

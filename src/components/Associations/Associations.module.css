@@ -1,0 +1,13 @@
+.imageBox {
+  position: 'relative';
+  display: 'flex';
+  justifyContent: 'center';
+  alignItems: 'center';
+  heigth: 50;
+  width: 150;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    heigth: 80;
+    width: 200;
+  }
+}
