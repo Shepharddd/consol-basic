@@ -20,22 +20,26 @@ export function Hero() {
               gap={{ base: 'sm', sm: 'lg' }}
             >
               <Button
-                  variant="gradient"
-                  gradient={{ from: 'pink', to: 'yellow' }}
-                  size="md"
-                  className={classes.control}
-                >
-                  Contact Us
-                </Button>
+                component='a'
+                href='/contact'
+                variant="gradient"
+                gradient={{ from: 'pink', to: 'yellow' }}
+                size="md"
+                className={classes.control}
+              >
+                Contact Us
+              </Button>
 
-                <Button
-                  variant="gradient"
-                  gradient={{ from: 'pink', to: 'yellow' }}
-                  size="md"
-                  className={classes.control}
-                >
-                  Bookings
-                </Button>
+              <Button
+                component='a'
+                href='/book'
+                variant="gradient"
+                gradient={{ from: 'pink', to: 'yellow' }}
+                size="md"
+                className={classes.control}
+              >
+                Bookings
+              </Button>
 
             </Flex>
           </div>

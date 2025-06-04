@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 
 import React from 'react';
-import { Box, ColorSchemeScript, Flex, mantineHtmlProps, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { theme } from '../../theme';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
@@ -26,13 +26,9 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-          <Flex direction="column" mih="100vh" miw="100hw">
-            <Header />
-              {children}
-            <Box mt="auto">
-              <Footer />
-            </Box>
-          </Flex>
+          <Header />
+          {children}
+          <Footer />
         </MantineProvider>
       </body>
     </html>
