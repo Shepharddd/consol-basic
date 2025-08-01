@@ -27,12 +27,15 @@ const mockdata = [
   },
 ];
 
+
+
+
 export default function Contact() {
   return (
     <div className="flex flex-col justify-start">
       <Container py="xl">
-        <Title order={2} ta="center" mt="sm">
-          Projects
+        <Title order={2} ta="start" mt="sm">
+          14 The Avenue
         </Title>
         <SimpleGrid
           mt={20}

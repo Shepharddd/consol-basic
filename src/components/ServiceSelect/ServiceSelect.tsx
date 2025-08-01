@@ -27,7 +27,7 @@ export function ServiceSelect({
             radius="md"
             mt={10}
             checked={checked === index}
-            onClick={() => checked === index ? setChecked(-1) : setChecked(index)}
+            onClick={() => setChecked(index)}
           >
             <Group justify="space-between" mt="md" mb="xs">
               <Text className={classes.label}>{item.title}</Text>

@@ -22,7 +22,7 @@ const mockdata = [
   },
   {
     img: "/fitout.jpeg",
-    title: 'Retail',
+    title: 'Remedial',
   },
 ];
 

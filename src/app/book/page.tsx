@@ -1,6 +1,6 @@
 "use client"
 import { Box, Button, Flex, Grid, Group, Title, Text, Card } from "@mantine/core";
-import { useState } from 'react';
+import { DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS, useState } from 'react';
 import { DatePicker, getTimeRange, TimeGrid } from '@mantine/dates';
 import '@mantine/dates/styles.css';
 import { ServiceSelect } from "@/components/ServiceSelect/ServiceSelect";
@@ -17,9 +17,9 @@ const services = [
 
 
 export default function Contact() {
-  const [ service, setService ] = useState(-1);
-  const [ date, setDate ] = useState<string | null>(null);
-  const  [ time, setTime ] = useState<string | null>('07:00');
+  const [ service, setService ] = useState(0);
+  const [ date, setDate ] = useState<string | null>(() => new Date().toISOString().split('T')[0]);
+  const [ time, setTime ] = useState<string | null>('07:00');
 
   return (
     <Box mx="auto" w={{base: "100%", md: "75%"}}>
@@ -39,7 +39,7 @@ export default function Contact() {
         </Grid.Col>
         <Grid.Col span={{base: 12, xl: 4}}>
           <Flex align="center" justify="center">
-            <DatePicker size="lg" value={date} onChange={setDate} />
+            <DatePicker defaultDate={new Date()} size="lg" value={date} onChange={setDate} />
           </Flex>
         </Grid.Col>
         <Grid.Col span={{base: 12, xl: 4}}>
