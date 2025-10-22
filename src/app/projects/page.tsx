@@ -1,41 +1,97 @@
 import { AspectRatio, Container, SimpleGrid, Title, Image } from "@mantine/core";
 
-const mockdata = [
+type Image = {
+  alt: string;
+  src: string;
+};
+
+type Project = {
+  name: string;
+  imgs: Image[];
+};
+
+const mockProjects: Project[] = [
   {
-    img: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Kitchen",
+    name: "14 The Avenue",
+    imgs: [
+      {
+        alt: "Bathroom",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498769.jpg",
+      },
+      {
+        alt: "Master Bedroom",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498770.jpg",
+      },
+      {
+        alt: "Living Room",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
+      },
+      {
+        alt: "Living Room",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498777.jpg",
+      },
+      {
+        alt: "Back Garden",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498778.jpg",
+      },
+      {
+        alt: "Kitchen",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22503350.jpg",
+      },
+    ],
   },
   {
-    img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
-    title: "Living Room",
-  },
-  {
-    img: "https://plus.unsplash.com/premium_photo-1661902468735-eabf780f8ff6?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Bathroom",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Bedroom",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2301&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Office",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1633330948542-0b3bdeefcdb3?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Garden",
+    name: "8/8A Clifton Road",
+    imgs: [
+      {
+        alt: "Front View",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
+      },
+        {
+        alt: "Entry",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(1%20of%2028).jpg",
+      },
+      {
+        alt: "Back Garden and Patio",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
+      },
+      {
+        alt: "Open Kitchen Design",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
+      },
+      {
+        alt: "Bedroom",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
+      },
+      {
+        alt: "Stairway",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
+      },
+      {
+        alt: "Living Room",
+        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(9%20of%2028).jpg",
+      },
+    ],
   },
 ];
 
 
+export default function Projects() {
+  return (
+    <div className="flex flex-col justify-start">
+      <Container py="xl">
+       {mockProjects.map((project) => <ProjectsSection project={project}/>)}
+      </Container>
+    </div>
+  );
+}
 
-
-export default function Contact() {
+function ProjectsSection({project}: {project: Project}) {
   return (
     <div className="flex flex-col justify-start">
       <Container py="xl">
         <Title order={2} ta="start" mt="sm">
-          14 The Avenue
+          {project.name}
         </Title>
         <SimpleGrid
           mt={20}
@@ -43,18 +99,19 @@ export default function Contact() {
           spacing={{ base: 10, sm: 'xl' }}
           verticalSpacing={{ base: 'md', sm: 'xl' }}
         >
-          {mockdata.map((entry, index) => (
+          {project.imgs.map((entry, index) => (
+            <AspectRatio key={index} ratio={1} >
+              <Image src={entry.src} alt={entry.alt}  />
+            </AspectRatio>
+          ))}
+          {/* {mockdata.map((entry, index) => (
             <AspectRatio key={index} ratio={1} >
               <Image src={entry.img} alt={entry.title}  />
             </AspectRatio>
-          ))}
-          {mockdata.map((entry, index) => (
-            <AspectRatio key={index} ratio={1} >
-              <Image src={entry.img} alt={entry.title}  />
-            </AspectRatio>
-          ))}
+          ))} */}
         </SimpleGrid>
       </Container>
     </div>
   );
 }
+

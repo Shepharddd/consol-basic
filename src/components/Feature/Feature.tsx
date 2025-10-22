@@ -9,6 +9,7 @@ import {
   Button,
 } from '@mantine/core';
 import classes from './Feature.module.css';
+import SetmoreWidget from '../SetmoreWidget';
 
 const mockdata = [
   {
@@ -35,15 +36,7 @@ export function Feature() {
       <Text fz="lg" mb="md" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-
-      <Button 
-        component="a"
-        size="md" 
-        color="dark"
-        href="/book"
-      >
-          Book Consultation
-      </Button>
+      <SetmoreWidget />
     </Card>
   ));
 
