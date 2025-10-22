@@ -16,27 +16,27 @@ const mockProjects: Project[] = [
     imgs: [
       {
         alt: "Bathroom",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498769.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498769.jpg",
       },
       {
         alt: "Master Bedroom",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498770.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498770.jpg",
       },
       {
         alt: "Living Room",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
       },
       {
         alt: "Living Room",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498777.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498777.jpg",
       },
       {
         alt: "Back Garden",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498778.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498778.jpg",
       },
       {
         alt: "Kitchen",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22503350.jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22503350.jpg",
       },
     ],
   },
@@ -45,31 +45,31 @@ const mockProjects: Project[] = [
     imgs: [
       {
         alt: "Front View",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
       },
         {
         alt: "Entry",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(1%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(1%20of%2028).jpg",
       },
       {
         alt: "Back Garden and Patio",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
       },
       {
         alt: "Open Kitchen Design",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
       },
       {
         alt: "Bedroom",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
       },
       {
         alt: "Stairway",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
       },
       {
         alt: "Living Room",
-        src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(9%20of%2028).jpg",
+        src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(9%20of%2028).jpg",
       },
     ],
   },
@@ -80,7 +80,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col justify-start">
       <Container py="xl">
-       {mockProjects.map((project) => <ProjectsSection project={project}/>)}
+       {mockProjects.map((project, idx_) => <ProjectsSection key={idx_} project={project}/>)}
       </Container>
     </div>
   );

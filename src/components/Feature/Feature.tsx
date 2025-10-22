@@ -6,7 +6,6 @@ import {
   Image,
   Text,
   Title,
-  Button,
 } from '@mantine/core';
 import classes from './Feature.module.css';
 import SetmoreWidget from '../SetmoreWidget';

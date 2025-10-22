@@ -5,27 +5,27 @@ import { IconArrowRight } from '@tabler/icons-react';
 const mockdata = [
   {
     alt: "Front View",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
   },
   {
     alt: "Stairway",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
   },
   {
     alt: "Living Room",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
   },
   {
     alt: "Open Kitchen Design",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
   },
   {
     alt: "Back Garden and Patio",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
   },
   {
     alt: "Bedroom",
-    src: "https://qeklqgbmlliuwamjkzqy.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
   },
 ];
 
@@ -42,7 +42,7 @@ export function Gallery() {
           View All Projects
         </Button>
       </Group>
-      
+
       <SimpleGrid
         mt={20}
         cols={{ base: 1, sm: 2, lg: 3 }}
