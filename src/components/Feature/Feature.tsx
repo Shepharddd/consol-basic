@@ -6,9 +6,10 @@ import {
   Image,
   Text,
   Title,
+  Button,
 } from '@mantine/core';
 import classes from './Feature.module.css';
-import SetmoreWidget from '../SetmoreWidget';
+import Link from 'next/link';
 
 const mockdata = [
   {
@@ -35,7 +36,21 @@ export function Feature() {
       <Text fz="lg" mb="md" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <SetmoreWidget />
+      {/* <SetmoreWidget /> */}
+      {/* <Button>
+      <Link href="https://app.squareup.com/appointments/buyer/widget/2mvmam1eyh3zoc/LBAQCSSGVQ6GP">
+        Book Now
+      </Link>
+    </Button> */}
+    <Button
+      component={Link}
+      href="https://app.squareup.com/appointments/buyer/widget/2mvmam1eyh3zoc/LBAQCSSGVQ6GP"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none' }}
+    >
+      Book Now
+    </Button>
     </Card>
   ));
 
