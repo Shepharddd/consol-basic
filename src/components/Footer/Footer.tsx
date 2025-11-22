@@ -5,7 +5,6 @@ import classes from './Footer.module.css';
 const links = [
   { link: '/', label: 'About' },
   { link: '/projects', label: 'Projects' },
-  { link: '/book', label: 'Consultations' },
   { link: '/contact', label: 'Contact' },
 ];
 

@@ -6,9 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Drawer, Divider } from '@mantine/core';
 import { IconChevronRight } from '@tabler/icons-react';
-
-
-
+import Link from 'next/link';
 
 const userLinks = [
   { link: 'mailto:micheal@rosmon.com', label: 'micheal@rosmon.com' },
@@ -18,7 +16,6 @@ const userLinks = [
 const mainLinks = [
   { link: '/', label: 'About' },
   { link: '/projects', label: 'Projects' },
-  { link: '/book', label: 'Consultations' },
   { link: '/contact', label: 'Contact' },
 ];
 
@@ -51,7 +48,10 @@ export function Header() {
   return (
     <header className={classes.header}>
       <Container className={classes.inner}>
-          <Image width={150} height={50} src="/rosmon.png" alt='img' />
+                  
+        <Link href="/">
+          <Image width={150} height={50} src="/rosmon.png" alt="Rosmon Projects logo" />
+        </Link>
         <Box className={classes.links} visibleFrom="sm">
           <Group justify="flex-end">{secondaryItems}</Group>
           <Group gap={0} justify="flex-end" className={classes.mainLinks}>
@@ -70,7 +70,9 @@ export function Header() {
         opened={opened}
         onClose={toggle}
         title={
-          <Image width={150} height={50} src="/rosmon.png" alt='img' />
+          <Link href="/">
+            <Image width={150} height={50} src="/rosmon.png" alt="Rosmon Projects logo" />
+          </Link>
         }
         padding="md"
         size="xs"

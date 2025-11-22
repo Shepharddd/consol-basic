@@ -3,7 +3,7 @@
   background-position: center;
   background-image:
     linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-    url(https://images.unsplash.com/photo-1503387762-592deb58ef4e);
+    url(/hero-bg.jpeg);
   padding-top: calc(var(--mantine-spacing-xl) * 3);
   padding-bottom: calc(var(--mantine-spacing-xl) * 3);
 }

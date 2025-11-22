@@ -4,28 +4,28 @@ import { IconArrowRight } from '@tabler/icons-react';
 
 const mockdata = [
   {
-    img: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Kitchen",
+    alt: "Front View",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8A%20Clifton%20Rd%20Clovelly%20(23%20of%2023).jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D",
-    title: "Living Room",
+    alt: "Stairway",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(3%20of%2028).jpg",
   },
   {
-    img: "https://plus.unsplash.com/premium_photo-1661902468735-eabf780f8ff6?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Bathroom",
+    alt: "Living Room",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/14%20The%20Avenue/Original22498772.jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Bedroom",
+    alt: "Open Kitchen Design",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(17%20of%2028).jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2301&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Office",
+    alt: "Back Garden and Patio",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(15%20of%2028).jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1633330948542-0b3bdeefcdb3?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Garden",
+    alt: "Bedroom",
+    src: "https://hgkbikwbaumtxaxmgbgt.supabase.co/storage/v1/object/public/images/8%20Clifton%20Road/8%20Clifton%20Rd%20Clovelly%20(27%20of%2028).jpg",
   },
 ];
 
@@ -37,6 +37,12 @@ export function Gallery() {
         Gallery
       </Title>
 
+      <Group justify="flex-end" mt="md">
+        <Button component="a" mr="sm" variant="light" rightSection={<IconArrowRight size={14} />} href='/projects'>
+          View All Projects
+        </Button>
+      </Group>
+
       <SimpleGrid
         mt={20}
         cols={{ base: 1, sm: 2, lg: 3 }}
@@ -45,15 +51,10 @@ export function Gallery() {
       >
         {mockdata.map((entry, index) => (
           <AspectRatio key={index} ratio={1} >
-            <Image src={entry.img} alt={entry.title}  />
+            <Image src={entry.src} alt={entry.alt}  />
           </AspectRatio>
         ))}
       </SimpleGrid>
-      <Group justify="flex-end" mt="md">
-        <Button component="a" mr="sm" variant="light" rightSection={<IconArrowRight size={14} />} href='/projects'>
-          View All Projects
-        </Button>
-      </Group>
     </Container>
   );
 }

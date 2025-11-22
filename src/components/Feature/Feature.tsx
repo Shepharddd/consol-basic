@@ -9,6 +9,7 @@ import {
   Button,
 } from '@mantine/core';
 import classes from './Feature.module.css';
+import Link from 'next/link';
 
 const mockdata = [
   {
@@ -22,7 +23,7 @@ const mockdata = [
   },
   {
     img: "/fitout.jpeg",
-    title: 'Retail',
+    title: 'Remedial',
   },
 ];
 
@@ -35,15 +36,21 @@ export function Feature() {
       <Text fz="lg" mb="md" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-
-      <Button 
-        component="a"
-        size="md" 
-        color="dark"
-        href="/book"
-      >
-          Book Consultation
-      </Button>
+      {/* <SetmoreWidget /> */}
+      {/* <Button>
+      <Link href="https://app.squareup.com/appointments/buyer/widget/2mvmam1eyh3zoc/LBAQCSSGVQ6GP">
+        Book Now
+      </Link>
+    </Button> */}
+    <Button
+      component={Link}
+      href="https://app.squareup.com/appointments/buyer/widget/2mvmam1eyh3zoc/LBAQCSSGVQ6GP"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none' }}
+    >
+      Book Now
+    </Button>
     </Card>
   ));
 

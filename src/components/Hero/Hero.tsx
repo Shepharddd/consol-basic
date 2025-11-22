@@ -30,17 +30,6 @@ export function Hero() {
                 Contact Us
               </Button>
 
-              <Button
-                component='a'
-                href='/book'
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
-                size="md"
-                className={classes.control}
-              >
-                Bookings
-              </Button>
-
             </Flex>
           </div>
         </div>
